@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Fundamentals</title>
+</head>
+<body>
+	<header>
+        <h2>Problem Statement: Write a program in any language to find the maximum and
+	minimum element in an array.<h2>
+
+    </header>
+    <hr>
+    <!--Section to dipslay a program-->
+	<sectio>
+		<h2>Program</h3>
+		<code>
+			#include &lt stdio.h &gt<br>
+			void main()<br>
+			{<br>
+	    	int arr[100];<br>
+	    	int i, mx, mn, n;<br>
+	    
+	       printf("\n\nFind maximum and minimum element in an array :\n");<br>
+	       printf("--------------------------------------------------\n");<br>
+
+	       printf("Input the number of elements to be stored in the array :");<br>
+	       scanf("%d",&n);<br>
+	   
+	       printf("Input %d elements in the array :\n",n);<br>
+	       for(i=0;i &lt n;i++)<br>
+	    	{<br>
+		      printf("element - %d : ",i);<br>
+		      scanf("%d",&arr[i]);<br>
+		    }<br>
+
+	    	mx = arr[0];<br>
+	    	mn = arr[0];<br>
+
+	    	for(i=1; i &lt n; i++)<br>
+	    	{<br>
+	        	if(arr[i] &gt mx)<br>
+	        	{<br>
+	            	mx = arr[i];<br>
+	        	}<br>
+
+
+	        	if(arr[i] &gt mn)<br>
+	        	{<br>
+	            	mn = arr[i];<br>
+	        	}<br>
+	    	}<br>
+	    	printf("Maximum element is : %d\n", mx);<br>
+	    	printf("Minimum element is : %d\n\n", mn);<br>
+			}
+
+		</code>
+    </section><hr>
+    
+    <!--Section to display Input-Output-->
+	<section>
+		<h2>Input</h2>
+		<p>Input the number of elements to be stored in the array : 5<br>
+			Input 5 elements in the array :<br>
+			element - 0: 23<br>
+			element - 1: 45<br>
+			element - 2: 10<br>
+			element - 3: 29<br>
+			element - 4: 36<br>
+			
+		</p>
+
+    </section><hr>
+    
+
+	<section>
+		<h2>Output</h2>
+		<p>Maximum element is : 45<br>
+			Minimum element is : 10<br></p>
+    </section><hr>
+    
+	<section>
+		<h2>Variables used in the program</h2>
+		<var>i, mx, mn, n, arr </var>
+    </section><hr>
+    
+    <!--Section to dipslay a Complexity-->
+	<section>
+		<h2>Complexity</h2>
+		<small>The complexitiy of above program is: O(n<sup>2</sup>)</small>
+    </section><hr>
+    
+    <p>For <strong>Algorithm</strong> click on following links:</p>
+    <nav>
+	<a href="https://www.geeksforgeeks.org/c-program-to-find-the-maximum-and-minimum-element-of-the-array/">Geeks For Geeks</a><br>
+	<a href="https://www.w3resource.com/c-programming-exercises/array/c-array-exercise-9.php">W3 resources</a><br>
+	<a href="https://www.javatpoint.com/java-program-to-print-the-largest-element-in-an-array">JavaTpoint</a>
+    </nav>
+
+    <div>
+        <footer>
+            
+            <p>Copyright © 2001 - 2020 Program</p>
+          </footer>
+        </div>
+</body>
+</html>
